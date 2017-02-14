@@ -1,0 +1,46 @@
+<ASSEMBLER_INFO>
+ <VERSION>2.2.6</VERSION>
+ <DEVICE>"ATtiny45"</DEVICE>
+ <WORKING_DIR>\\engin.uiowa.edu\stuff\home\sammorgan\windowsdata\Desktop\Lab2\Lab2\Debug</WORKING_DIR>
+ <INCLUDE_PATH>
+  <DIR>C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATtiny_DFP\1.0.79\avrasm\inc</DIR>
+  <DIR>C:\Program Files (x86)\Atmel\Studio\7.0\toolchain\avr8\avrassembler\Include</DIR>
+  <DIR></DIR>
+ </INCLUDE_PATH>
+ <SOURCE_FILE>\\engin.uiowa.edu\stuff\home\sammorgan\windowsdata\Desktop\Lab2\Lab2\main.asm</SOURCE_FILE>
+ <INCLUDED_FILES>
+  <FILE>C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATtiny_DFP\1.0.79\avrasm\inc\tn45def.inc</FILE>
+ </INCLUDED_FILES>
+ <OBJECT_FILES>
+  <FILE>\\engin.uiowa.edu\stuff\home\sammorgan\windowsdata\Desktop\Lab2\Lab2\Debug\Lab2.obj</FILE>
+ </OBJECT_FILES>
+ <HEX_FILES>
+  <FILE>Lab2.hex</FILE>
+ </HEX_FILES>
+ <OUTPUT_FILES>
+  <FILE>Lab2.map</FILE>
+  <FILE>Lab2.lss</FILE>
+ </OUTPUT_FILES>
+ <LABELS>
+  <loop1><FILE>\\engin.uiowa.edu\stuff\home\sammorgan\windowsdata\Desktop\Lab2\Lab2\main.asm</FILE><LINE>17</LINE></loop1>
+  <loop2><FILE>\\engin.uiowa.edu\stuff\home\sammorgan\windowsdata\Desktop\Lab2\Lab2\main.asm</FILE><LINE>18</LINE></loop2>
+  <Delay_12us><FILE>\\engin.uiowa.edu\stuff\home\sammorgan\windowsdata\Desktop\Lab2\Lab2\main.asm</FILE><LINE>127</LINE></Delay_12us>
+  <Delay_29ms><FILE>\\engin.uiowa.edu\stuff\home\sammorgan\windowsdata\Desktop\Lab2\Lab2\main.asm</FILE><LINE>137</LINE></Delay_29ms>
+  <VCR_play><FILE>\\engin.uiowa.edu\stuff\home\sammorgan\windowsdata\Desktop\Lab2\Lab2\main.asm</FILE><LINE>75</LINE></VCR_play>
+  <TV_vol><FILE>\\engin.uiowa.edu\stuff\home\sammorgan\windowsdata\Desktop\Lab2\Lab2\main.asm</FILE><LINE>92</LINE></TV_vol>
+  <Logic_1><FILE>\\engin.uiowa.edu\stuff\home\sammorgan\windowsdata\Desktop\Lab2\Lab2\main.asm</FILE><LINE>43</LINE></Logic_1>
+  <Delay_889us><FILE>\\engin.uiowa.edu\stuff\home\sammorgan\windowsdata\Desktop\Lab2\Lab2\main.asm</FILE><LINE>109</LINE></Delay_889us>
+  <s1><FILE>\\engin.uiowa.edu\stuff\home\sammorgan\windowsdata\Desktop\Lab2\Lab2\main.asm</FILE><LINE>48</LINE></s1>
+  <Delay_69c><FILE>\\engin.uiowa.edu\stuff\home\sammorgan\windowsdata\Desktop\Lab2\Lab2\main.asm</FILE><LINE>120</LINE></Delay_69c>
+  <Logic_0><FILE>\\engin.uiowa.edu\stuff\home\sammorgan\windowsdata\Desktop\Lab2\Lab2\main.asm</FILE><LINE>59</LINE></Logic_0>
+  <s2><FILE>\\engin.uiowa.edu\stuff\home\sammorgan\windowsdata\Desktop\Lab2\Lab2\main.asm</FILE><LINE>63</LINE></s2>
+  <d4><FILE>\\engin.uiowa.edu\stuff\home\sammorgan\windowsdata\Desktop\Lab2\Lab2\main.asm</FILE><LINE>113</LINE></d4>
+  <d5><FILE>\\engin.uiowa.edu\stuff\home\sammorgan\windowsdata\Desktop\Lab2\Lab2\main.asm</FILE><LINE>114</LINE></d5>
+  <d277><FILE>\\engin.uiowa.edu\stuff\home\sammorgan\windowsdata\Desktop\Lab2\Lab2\main.asm</FILE><LINE>123</LINE></d277>
+  <d1><FILE>\\engin.uiowa.edu\stuff\home\sammorgan\windowsdata\Desktop\Lab2\Lab2\main.asm</FILE><LINE>130</LINE></d1>
+  <d2><FILE>\\engin.uiowa.edu\stuff\home\sammorgan\windowsdata\Desktop\Lab2\Lab2\main.asm</FILE><LINE>131</LINE></d2>
+  <d7><FILE>\\engin.uiowa.edu\stuff\home\sammorgan\windowsdata\Desktop\Lab2\Lab2\main.asm</FILE><LINE>142</LINE></d7>
+  <d8><FILE>\\engin.uiowa.edu\stuff\home\sammorgan\windowsdata\Desktop\Lab2\Lab2\main.asm</FILE><LINE>143</LINE></d8>
+  <d9><FILE>\\engin.uiowa.edu\stuff\home\sammorgan\windowsdata\Desktop\Lab2\Lab2\main.asm</FILE><LINE>144</LINE></d9>
+ </LABELS>
+</ASSEMBLER_INFO>
