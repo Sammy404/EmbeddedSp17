@@ -1,45 +1,33 @@
 ; Lab2.asm
 ;
 ; Created: 2/7/2017 7:00:08 PM
-; Author : jwryan
+; Authors : Jason Ryan, Sam Morgan
 ;
 
 .include "tn45def.inc"
 .cseg
 .org 0
 
-; Configure PB0 as input; PB1 as output		
+	; Configure PB0 as input; PB1 as output		
 	sbi DDRB,1		; PB1 is now output
-	;PB0 is configured as input by default 
+	; PB0 is configured as input by default 
 	sbi PORTB,0		; Pull up resistor enabled in PB0 so switch can be read
 	
 
-	loop1: ;Infinite loop 
-		loop2: ;Button loop
+	loop1: ; Infinite loop 
+		loop2: ; Button loop
 			rcall Delay_12us
-			SBIC PINB, 0
+			SBIC PINB, 0	; if button pressed exit loop2
 			rjmp loop2
 			rcall Delay_29ms
 			rcall Delay_29ms
 			rcall Delay_29ms
-			rcall VCR_play
+			rcall VCR_play	; send VCR signal
 			rcall Delay_29ms
-			rcall TV_vol
+			rcall TV_vol	; send TV signal
 			rjmp loop1
-
-	/*loop:
-		sbi   PORTB,1     ; LED at PB1 off
-		cbi   PORTB,2     ; LED at PB2 on 
-		rcall delay_29  ; Wait
-		nop
-		nop
-		cbi   PORTB,1     ; LED at PB1 on
-		sbi   PORTB,2     ; LED at PB2 off  
-		rcall delay_29 ; Wait
-	    nop
-	    nop
-      rjmp   loop*/
 			
+	; Subroutine for producing logic 1
 	Logic_1:
 		cbr r27,0
 		sbi PORTB,1
@@ -56,6 +44,7 @@
 		cbi PORTB,1
 		ret
 
+	; Subroutine for producing logic 0
 	Logic_0:
 		cbr r27,0
 		sbi PORTB,1
@@ -72,6 +61,7 @@
 		cbi PORTB,1
 		ret
 
+	; Subroutine for producing VCR signal
 	VCR_play:
 		rcall Logic_1
 		rcall Logic_1
@@ -88,7 +78,8 @@
 		rcall Logic_0
 		rcall Logic_1
 		ret
-
+	
+	; Subroutine for producing TV signal
 	TV_vol:
 		rcall Logic_1
 		rcall Logic_1
@@ -106,7 +97,8 @@
 		rcall Logic_1
 		ret
 		
-	Delay_889us:	;Delays for 889 microseconds 
+	; Subroutine delays for 889 microseconds 
+	Delay_889us:	
 		CBR r18,0
 		CBR r19,0
 		ldi r18,16
@@ -117,14 +109,17 @@
 		brne d4
 		ret
 
-	Delay_69c:		;Delays for 69 cycles
-		CBR r18,0	;Actually delays for 79, since in real testing results were better
-		ldi r18, 20 ;
+	; Delays for 69 cycles
+	; Actually delays for 79, since in real testing results were better
+	Delay_69c:		
+		CBR r18,0	
+		ldi r18, 20 
 		d277: dec r18		
 		brne d277
 		ret
 
-	Delay_12us:		;Small delay of 12 microseconds
+	; Small delay of 12 microseconds
+	Delay_12us:		
 		CBR R18,0
 		ldi r18,3		
 	d1:	ldi r19,12
@@ -134,7 +129,8 @@
 		brne d1
 		ret
 
-	Delay_29ms:		;29 Millesecond Delay
+	; 29 Millisecond Delay
+	Delay_29ms:		
 		CBR r18,0
 		CBR r19,0
 		CBR r20,0
